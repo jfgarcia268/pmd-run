@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="Performance"
+
+    xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+
+  <description>
+
+The Performance ruleset contains a collection of good practices which should be followed.
+
+  </description>
+
+    <rule ref="category/apex/performance.xml/AvoidDmlStatementsInLoops" message="AvoidDmlStatementsInLoops"/>
+
+    <rule ref="category/apex/performance.xml/AvoidSoqlInLoops" message="AvoidSoqlInLoops" />
+
+    <rule ref="category/apex/design.xml/ExcessiveClassLength" message="Avoid really long classes (lines of code)" />
+
+    <rule ref="category/apex/design.xml/ExcessiveParameterList" message="Methods with numerous parameters are a challenge to maintain" />
+
+    <rule ref="category/apex/design.xml/AvoidDeeplyNestedIfStmts" message="Avoid creating deeply nested if-then statements since they are harder to read and error-prone to maintain." />
+
+    <rule ref="category/apex/security.xml/ApexSOQLInjection" message="etects the usage of untrusted / unescaped variables in DML queries.." />
+
+</ruleset>
