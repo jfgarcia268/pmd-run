@@ -21,7 +21,10 @@ The Performance ruleset contains a collection of good practices which should be 
     <rule ref="category/apex/performance.xml/AvoidSoqlInLoops" message="AvoidSoqlInLoops" />
 
     <rule ref="category/apex/design.xml/ExcessiveClassLength" message="Avoid really long classes (lines of code)" />
-
+        <properties>
+            <property name="minimum" value="10.0" />
+        </properties>
+    </rule>
     <rule ref="category/apex/design.xml/ExcessiveParameterList" message="Methods with numerous parameters are a challenge to maintain" />
 
     <rule ref="category/apex/design.xml/AvoidDeeplyNestedIfStmts" message="Avoid creating deeply nested if-then statements since they are harder to read and error-prone to maintain." />
