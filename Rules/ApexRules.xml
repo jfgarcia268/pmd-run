@@ -22,7 +22,7 @@ The Performance ruleset contains a collection of good practices which should be 
 
     <rule ref="category/apex/design.xml/ExcessiveClassLength" message="Avoid really long classes (lines of code)" />
         <properties>
-            <property name="minimum" value="10.0" />
+            <property name="minimum" value="1000.0" />
         </properties>
     </rule>
     <rule ref="category/apex/design.xml/ExcessiveParameterList" message="Methods with numerous parameters are a challenge to maintain" />
